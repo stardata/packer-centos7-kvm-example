@@ -4,7 +4,7 @@
     {
       "type": "qemu",
       "accelerator": "kvm",
-      "headless": false,
+      "headless": true,
       "qemuargs": [
         [ "-m", "2048M" ],
         [ "-smp", "cpus=1,maxcpus=16,cores=4" ]
@@ -14,9 +14,9 @@
       "format": "qcow2",
       "net_device": "virtio-net",
 
-      "iso_url": "http://centos.fastbull.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
-      "iso_checksum": "88c0437f0a14c6e2c94426df9d43cd67",
-      "iso_checksum_type": "md5",
+      "iso_url": "http://centos.mirror.garr.it/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso",
+      "iso_checksum": "9a2c47d97b9975452f7d582264e9fc16d108ed8252ac6816239a3b58cef5c53d",
+      "iso_checksum_type": "sha256",
 
       "vm_name": "centos7-base",
       "output_directory": "centos7-base-img",
